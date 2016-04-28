@@ -1,0 +1,14 @@
+<h1>Artists#show</h1>
+<h1>
+   <%= @artist.name %>
+</h1>
+
+<h3><%= @artist.age %></h3>
+
+<p><%= simple_format @artist.bio %></p>
+
+<h2>Songs</h2>
+
+<% songs = @artist.songs.sort_by { |song| song.year } %>
+
+<%= render songs, hide_artist: true %>
