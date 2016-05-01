@@ -170,7 +170,12 @@ DEPENDENCIES
   byebug
   carrierwave
   coffee-rails (~> 4.1.0)
+<<<<<<< HEAD
   devise
+||||||| merged common ancestors
+=======
+  devise (~> 3.5)
+>>>>>>> 6b0c18a7eead602b64e8db218b480dce7c877cbc
   jbuilder (~> 2.0)
   jquery-rails
   pg (~> 0.15)

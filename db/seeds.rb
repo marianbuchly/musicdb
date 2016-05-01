@@ -76,9 +76,19 @@ artist_songs.each do | artist_name, songs |
     song = Song.create( title:title, artist_id: artist.id, duration: duration , album:album , year: year )
    end
 end
+<<<<<<< HEAD
 
 User.delete_all
 
 frank = User.create( email: 'frank@ex.com', password: 'abcd1234' )
 alice = User.create( email: 'alice@ex.com', password: 'abcd1234' )
 anton = User.create( email: 'anton@ex.com', password: 'abcd1234' )
+||||||| merged common ancestors
+=======
+
+User.delete_all
+
+frank = User.create( email: 'frank@ex.com', password: '1234' )
+alice = User.create( email: 'alice@ex.com', password: '1234' )
+anton = User.create( email: 'anton@ex.com', password: '1234' )
+>>>>>>> 6b0c18a7eead602b64e8db218b480dce7c877cbc

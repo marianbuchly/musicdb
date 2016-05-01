@@ -25,10 +25,16 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bootstrap-sass', '~> 3.3.6'
 
+<<<<<<< HEAD
 gem 'devise'
 
 gem 'carrierwave'
 
+||||||| merged common ancestors
+=======
+gem 'devise', '~> 3.5'
+
+>>>>>>> 6b0c18a7eead602b64e8db218b480dce7c877cbc
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

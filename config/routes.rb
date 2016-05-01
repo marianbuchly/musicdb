@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   devise_for :users
+||||||| merged common ancestors
+=======
+devise_for :users
+
+>>>>>>> 6b0c18a7eead602b64e8db218b480dce7c877cbc
   get 'site/home'
 
   get 'site/about'
@@ -18,6 +24,8 @@ Rails.application.routes.draw do
   get "about" => "site#about"
 
  root "site#home"
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
