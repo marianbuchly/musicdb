@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'site/home'
+
+  get 'site/about'
+
   get 'songs/index'
 
   get 'songs/show'
@@ -10,7 +14,9 @@ Rails.application.routes.draw do
   resources :artists
   resources :songs
 
-  root "artists#index"
+  get "about" => "site#about"
+
+ root "site#home"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

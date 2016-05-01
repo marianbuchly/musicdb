@@ -1,11 +1,19 @@
 <h1>Artists#show</h1>
 <h1>
    <%= @artist.name %>
+   <%= link_to "Delete", artist_path( @artist ), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default", style: "float: right" %>
+   <%= link_to "Edit", edit_artist_path( @artist ), class: "btn btn-default", style: "float: right" %>
 </h1>
 
 <h3><%= @artist.age %></h3>
 
 <p><%= simple_format @artist.bio %></p>
+
+<div class="inline cover">
+      <img class="small-image" src="<%= @artist.img %>"/>
+   </div>
+
+<%= link_to "New Song", new_song_path( artist_id: @artist.id ), class: "btn btn-default", style: "float: right" %></h2>
 
 <h2>Songs</h2>
 

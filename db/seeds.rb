@@ -5,19 +5,19 @@ artists = [
   ],
 
   [
-    "Michael Jackson" , 49 , %{bio MJ} , "madonna.jpg"
+    "Michael Jackson" , 49 , %{bio MJ} , "michael.jpg"
   ],
 
   [
-    "Whitney Houston" , 58 , %{bio WH} , "madonna.jpg"
+    "Whitney Houston" , 58 , %{bio WH} , "whitney.jpg"
   ],
 
   [
-    "Janet Jackson" , 51 , %{bio JJ} , "madonna.jpg"
+    "Janet Jackson" , 51 , %{bio JJ} , "janet.jpg"
   ],
 
   [
-    "Elton John" , 50 , %{bio EJ} , "madonna.jpg"
+    "Elton John" , 50 , %{bio EJ} , "http://nepascene.com/wp-content/uploads/2016/03/elton-john-giant-center-hershey.jpg"
   ],
 ]
 
