@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 20160501115304) do
+||||||| merged common ancestors
+ActiveRecord::Schema.define(version: 20160428052640) do
+=======
 ActiveRecord::Schema.define(version: 20160501113519) do
+>>>>>>> 6b0c18a7eead602b64e8db218b480dce7c877cbc
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +39,7 @@ ActiveRecord::Schema.define(version: 20160501113519) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string   "artist_id"
+    t.string   "image"
   end
 
   create_table "users", force: :cascade do |t|

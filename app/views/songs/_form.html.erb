@@ -22,6 +22,11 @@
        <%= f.text_field :album, class: "form-control", placeholder: " . . ."   %>
     </div>
 
+    <div>
+      <%= f.label :image %><br>
+      <%= f.file_field :image %>
+    </div>
+
     <%= f.submit (@song.new_record? ? "Create" : "Update"), class: "form-control btn-primary" %>
 
 <% end %>

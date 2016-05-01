@@ -16,6 +16,13 @@
             <li><%= link_to "Artists", artists_path %></li>
             <li><%= link_to "Songs", songs_path %></li>
          </ul>
+<<<<<<< HEAD
+||||||| merged common ancestors
+         <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "About", about_path %></li>
+         </ul>
+      </div>
+=======
 
   <div class="nav navbar-nav navbar-right">
     <% if !user_signed_in? %>
@@ -26,6 +33,16 @@
   <% end %>
 </div>
       </div>
+>>>>>>> 6b0c18a7eead602b64e8db218b480dce7c877cbc
 
+    
+      <div class="nav navbar-nav navbar-right">
+          <% if !user_signed_in? %>
+              <li><%= link_to "Log In", new_user_session_path %></li>
+          <% else %>
+              <li><span class="navbar-text"><%= current_user.email %></span></li>
+              <li><%= link_to "Log Out", destroy_user_session_path, :method => :delete %></li>
+        <% end %>
+      </div>
    </div>
 </nav>

@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
+  devise_for :users
+||||||| merged common ancestors
+=======
 devise_for :users
 
+>>>>>>> 6b0c18a7eead602b64e8db218b480dce7c877cbc
   get 'site/home'
 
   get 'site/about'
