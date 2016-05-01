@@ -1,4 +1,5 @@
-<h1>Songs#index</h1>
+<h1>Songs
+<%= link_to "New Song", new_song_path, class: "btn btn-default", style: "float: right" %></h1>
 <% @songs.each do |song| %>
     <p><%= link_to song.title, song %></p>
 <% end %>
