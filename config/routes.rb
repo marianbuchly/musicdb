@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+devise_for :users
+
   get 'site/home'
 
   get 'site/about'
@@ -17,6 +19,8 @@ Rails.application.routes.draw do
   get "about" => "site#about"
 
  root "site#home"
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -76,3 +76,9 @@ artist_songs.each do | artist_name, songs |
     song = Song.create( title:title, artist_id: artist.id, duration: duration , album:album , year: year )
    end
 end
+
+User.delete_all
+
+frank = User.create( email: 'frank@ex.com', password: '1234' )
+alice = User.create( email: 'alice@ex.com', password: '1234' )
+anton = User.create( email: 'anton@ex.com', password: '1234' )
